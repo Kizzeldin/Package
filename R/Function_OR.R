@@ -3,6 +3,17 @@ library(usethis)
 library(here)
 library(dplyr)
 toydata <- read.table(here("toydata.txt"), header = TRUE)
+#' Kabieror
+#'
+#' @param coef
+#' @param se
+#' @param siglevel
+#' @param roundto
+#'
+#' @return
+#' @export
+#'
+#' @examples
 OR_95CI <- function(coef, se, siglevel, roundto){
   q <- 1 - siglevel / 2
   OR <- exp(coef)
