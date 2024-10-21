@@ -1,6 +1,6 @@
 Package: kabieror
 Type: Package
-Title: Returns odds ratios and 95% confidence intervals for logistic regression models
+Title: Returns odds ratios and 95% confidence interval for logistic regression models
 Version: 0.1.0
 Author: Kabier Izzeldin
 Maintainer: The package maintainer <kabier.izzeldin@mail.utoronto.ca>
