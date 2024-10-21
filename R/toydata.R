@@ -11,5 +11,4 @@
 #' }
 #' @source CHL8010 Course Website
 #' @references Aya Mitani
-
-devtools::document()
+"toydata"

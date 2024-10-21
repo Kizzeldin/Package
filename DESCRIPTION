@@ -1,11 +1,14 @@
 Package: kabieror
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Returns odds ratios and 95% confidence intervals for logistic regression models
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Kabier Izzeldin
+Maintainer: The package maintainer <kabier.izzeldin@mail.utoronto.ca>
+Description: More about what it does:
+    This package is meant to efficiently return an odds ratio effect estimate by exponentiating beta coefficients from a logistic regression model.    The package will also provide the user with the 95% confidence intervals.    The user must provide a beta coefficient, standard error, significance level, and preffered decimal point accuracy.
+License: usethis::use_mit_license()
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.3.1
+Depends: 
+    R (>= 2.10)

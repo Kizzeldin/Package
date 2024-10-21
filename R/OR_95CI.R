@@ -1,19 +1,18 @@
-library(devtools)
-library(usethis)
-library(here)
-library(dplyr)
-toydata <- read.table(here("toydata.txt"), header = TRUE)
-#' Kabieror
+
+#' calculate CI
 #'
-#' @param coef
-#' @param se
-#' @param siglevel
-#' @param roundto
+#' @param coef coef from glm
+#' @param se se from glm
+#' @param siglevel sig level
+#' @param roundto decimal places
 #'
-#' @return
+#' @return or and ci
 #' @export
 #'
 #' @examples
+#' coef = c(1:3)
+#' se = c(0.1,0.2,0.3)
+#' OR_95CI(coef = coef, se = se, siglevel =0.05,roundto=2)
 OR_95CI <- function(coef, se, siglevel, roundto){
   q <- 1 - siglevel / 2
   OR <- exp(coef)
@@ -28,4 +27,3 @@ OR_95CI <- function(coef, se, siglevel, roundto){
   )
   return(ORresult)
 }
-devtools::document()
